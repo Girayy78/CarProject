@@ -1,0 +1,5 @@
+#signUpLabel {
+    -fx-text-fill: #0066cc;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
