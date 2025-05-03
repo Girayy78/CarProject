@@ -1,6 +1,6 @@
 package com.example.carmanagement;
 
-public class Vehicle {
+public abstract class Vehicle {
     private String licensePlate;
     private String vehicleType;
     private String model;
