@@ -25,6 +25,7 @@ public class LoginController {
     public void underLineSignUpLabel(){
         signUpLabel.setOnMouseEntered(e -> signUpLabel.setStyle("-fx-underline: true;"));
         signUpLabel.setOnMouseExited(e -> signUpLabel.setStyle("-fx-underline: false;"));
+        System.out.println("X");
     }
 
 
