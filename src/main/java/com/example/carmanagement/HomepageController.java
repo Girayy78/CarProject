@@ -29,5 +29,8 @@ public class HomepageController {
     public void goToServiceHistory(ActionEvent event) throws IOException {
         SceneController.switchTo("serviceHistory.fxml", event, "Service History!", "/loginCSS.css");
     }
+    public void goToUserRegister(ActionEvent event) throws IOException {
+        SceneController.switchTo("userRegister.fxml", event, "User Register!", "/loginCSS.css");
+    }
 
 }

@@ -6,10 +6,11 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carmanagement.HomepageController">
    <children>
       <Button layoutX="159.0" layoutY="64.0" mnemonicParsing="false" onAction="#goToVehicleRegister" prefHeight="25.0" prefWidth="244.0" text="Vehicle Registration" />
-      <Button layoutX="159.0" layoutY="115.0" mnemonicParsing="false" onAction="#goToEssentialMaintenance" prefHeight="25.0" prefWidth="244.0" text="Essential Maintenance" />
-      <Button layoutX="159.0" layoutY="162.0" mnemonicParsing="false" onAction="#goToOilChange" prefHeight="25.0" prefWidth="244.0" text="Oil Change" />
-      <Button layoutX="159.0" layoutY="209.0" mnemonicParsing="false" onAction="#goToBrakeServices" prefHeight="25.0" prefWidth="244.0" text="Brake Services" />
-      <Button layoutX="159.0" layoutY="261.0" mnemonicParsing="false" onAction="#goToOptionalServices" prefHeight="25.0" prefWidth="244.0" text="Optional Services" />
-      <Button layoutX="159.0" layoutY="307.0" mnemonicParsing="false" onAction="#goToServiceHistory" prefHeight="25.0" prefWidth="244.0" text="Service History" />
+      <Button layoutX="159.0" layoutY="152.0" mnemonicParsing="false" onAction="#goToEssentialMaintenance" prefHeight="25.0" prefWidth="244.0" text="Essential Maintenance" />
+      <Button layoutX="159.0" layoutY="200.0" mnemonicParsing="false" onAction="#goToOilChange" prefHeight="25.0" prefWidth="244.0" text="Oil Change" />
+      <Button layoutX="159.0" layoutY="251.0" mnemonicParsing="false" onAction="#goToBrakeServices" prefHeight="25.0" prefWidth="244.0" text="Brake Services" />
+      <Button layoutX="159.0" layoutY="294.0" mnemonicParsing="false" onAction="#goToOptionalServices" prefHeight="25.0" prefWidth="244.0" text="Optional Services" />
+      <Button layoutX="159.0" layoutY="345.0" mnemonicParsing="false" onAction="#goToServiceHistory" prefHeight="25.0" prefWidth="244.0" text="Service History" />
+      <Button layoutX="159.0" layoutY="106.0" mnemonicParsing="false" onAction="#goToUserRegister" prefHeight="25.0" prefWidth="244.0" text="User Registration" />
    </children>
 </AnchorPane>
