@@ -25,6 +25,7 @@ public class RegisterController implements Initializable {
 
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
-      vehicleTypeComboBox.setItems(FXCollections.observableArrayList("Car","Truck", "MotorCycle"));
+      vehicleTypeComboBox.setItems(FXCollections.observableArrayList("Car","Truck", "Motorcycle"));
+
     }
 }
