@@ -34,10 +34,10 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <CheckBox layoutX="332.0" layoutY="87.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="196.0" layoutY="143.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="189.0" layoutY="200.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="244.0" layoutY="259.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="244.0" layoutY="318.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="interiorExteriorCleaningCheck" layoutX="332.0" layoutY="87.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="tireRotationCheck" layoutX="196.0" layoutY="143.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="acCleaningCheck" layoutX="189.0" layoutY="200.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="wheelAlignmentCheck" layoutX="244.0" layoutY="259.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="airFilterCleaningCheck" layoutX="244.0" layoutY="318.0" mnemonicParsing="false" text="CheckBox" />
    </children>
 </AnchorPane>
