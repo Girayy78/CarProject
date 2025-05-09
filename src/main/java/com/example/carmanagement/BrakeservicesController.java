@@ -24,7 +24,7 @@ public class BrakeservicesController {
 
     @FXML
     public void initialize() {
-        // Load saved states when the controller initializes
+
         if (brakePadReplacementCheck != null) {
             brakePadReplacementCheck.setSelected(
                     StateManager.getCheckboxState("BrakeservicesController", "brakePadReplacementCheck")
@@ -45,7 +45,7 @@ public class BrakeservicesController {
     }
 
     public void goToHomePage(ActionEvent event) throws IOException {
-        // Save states before navigating away
+
         saveCheckboxStates();
         SceneController.switchTo("homePage.fxml", event, "HomePage", "/loginCSS.css");
     }

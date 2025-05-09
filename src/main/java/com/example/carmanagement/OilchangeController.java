@@ -24,7 +24,7 @@ public class OilchangeController {
 
     @FXML
     public void initialize() {
-        // Load saved states when the controller initializes
+
         if (filterCheck != null) {
             filterCheck.setSelected(
                     StateManager.getCheckboxState("OilchangeController", "filterCheck")
@@ -45,7 +45,7 @@ public class OilchangeController {
     }
 
     public void goToHomePage(ActionEvent event) throws IOException {
-        // Save states before navigating away
+
         saveCheckboxStates();
         SceneController.switchTo("homePage.fxml", event, "HomePage", "/loginCSS.css");
     }

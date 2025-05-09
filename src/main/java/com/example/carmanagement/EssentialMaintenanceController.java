@@ -33,7 +33,7 @@ public class EssentialMaintenanceController {
 
     @FXML
     public void initialize() {
-        // Load saved states when the controller initializes
+
         if (tireMaintenanceCheck != null) {
             tireMaintenanceCheck.setSelected(
                     StateManager.getCheckboxState("OptionalservicesController", "tireMaintenanceCheck")
@@ -72,7 +72,7 @@ public class EssentialMaintenanceController {
     }
 
     public void goToHomePage(ActionEvent event) throws IOException {
-        // Save states before navigating away
+
         saveCheckboxStates();
         SceneController.switchTo("homePage.fxml", event, "HomePage", "/loginCSS.css");
     }
