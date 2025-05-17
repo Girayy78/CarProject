@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.6"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.carmanagement.CustomerDashboardController">
+
+    <top>
+        <Label text="Welcome, Customer!" style="-fx-font-size: 18px; -fx-padding: 10;"/>
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="View Services" prefWidth="200" onAction="#goToServiceSelection"/>
+            <Button text="Logout" prefWidth="200" onAction="#logout"/>
+        </VBox>
+    </center>
+
+</BorderPane>
