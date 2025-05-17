@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carmanagement.SignupController">
-   <children>
-      <Label layoutX="143.0" layoutY="37.0" text="Create Your Account">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <Label layoutX="106.0" layoutY="165.0" text="Username">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="110.0" layoutY="255.0" text="Password">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <TextField fx:id="signUpUsernameTextField" layoutX="256.0" layoutY="175.0" />
-      <PasswordField fx:id="signUpPasswordTextField" layoutX="256.0" layoutY="260.0" />
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToLogin" text="Go Back" />
-      <Button layoutX="281.0" layoutY="326.0" mnemonicParsing="false" text="Sign up" />
-   </children>
-</AnchorPane>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8"
+          fx:controller="com.example.carmanagement.SignupController"
+          hgap="10" vgap="10" alignment="CENTER">
+
+   <padding>
+      <Insets top="20" bottom="20" left="20" right="20"/>
+   </padding>
+
+   <!-- Go Back Button -->
+   <HBox spacing="10" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" alignment="TOP_LEFT">
+      <Button text="← Go Back" onAction="#goBack"/>
+   </HBox>
+
+   <!-- Username -->
+   <Label text="Username" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+   <TextField fx:id="usernameField" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="200"/>
+
+   <!-- Password -->
+   <Label text="Password" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+   <PasswordField fx:id="passwordField" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="200"/>
+
+   <!-- Role -->
+   <Label text="Role" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+   <ComboBox fx:id="roleComboBox" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="200"/>
+
+   <!-- Sign Up Button -->
+   <Button text="Sign Up" onAction="#signUp" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+   <!-- Message Label -->
+   <Label fx:id="messageLabel" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+</GridPane>

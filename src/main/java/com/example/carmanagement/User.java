@@ -1,51 +1,23 @@
 package com.example.carmanagement;
 
 public class User {
-
-    private String username;
-    private String password;
+    private int id;
     private String fullName;
-    private String email;
-    private String phoneNumber;
-    private String role;
+    private String username;
+    private String plate;
+    private String password;
 
-    User(String username, String password, String fullName, String email, String phoneNumber) {
-        this.username = username;
-        this.password = password;
+    public User(int id, String fullName, String username, String plate, String password) {
+        this.id = id;
         this.fullName = fullName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-
-        if (username.equals("admin") && password.equals("gaziprojeadmin")) {
-            this.role = "admin";
-        } else {
-            this.role = "user";
-        }
-
+        this.username = username;
+        this.plate = plate;
+        this.password = password;
     }
 
-    private String getUsername(){
-        return username;
-    }
-
-    private String getPassword() {
-        return password;
-    }
-
-    private String getFullName() {
-        return fullName;
-    }
-
-    private String getEmail() {
-        return email;
-    }
-
-    private String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    private String getRole() {
-        return  role;
-    }
-
+    public int getId() { return id; }
+    public String getFullName() { return fullName; }
+    public String getUsername() { return username; }
+    public String getPlate() { return plate; }
+    public String getPassword() { return password; }
 }

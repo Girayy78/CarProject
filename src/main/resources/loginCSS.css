@@ -1,3 +1,55 @@
 .root {
-     -fx-background-color: #FFE4C4;
- }
+    -fx-background-color: linear-gradient(to bottom right, #d8d4cb, #f0ebe3);
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label {
+    -fx-text-fill: #5a5449;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #a69f8e !important;
+    -fx-text-fill: white !important;
+    -fx-font-size: 14px !important;
+    -fx-background-radius: 8 !important;
+    -fx-cursor: hand !important;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 3, 0, 0, 1) !important;
+}
+
+.button:hover {
+    -fx-background-color: #c1bbad !important;
+}
+
+.text-field, .password-field, .combo-box {
+    -fx-background-color: #f7f4ef;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #c8c3b5;
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: #5a5449;
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #a69f8e;
+    -fx-border-width: 2;
+}
+
+.text-area {
+    -fx-background-color: #f7f4ef;
+    -fx-border-color: #c8c3b5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: #5a5449;
+    -fx-font-size: 13px;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #c8c3b5;
+    -fx-background-insets: 2;
+    -fx-background-radius: 6;
+}
