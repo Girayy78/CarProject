@@ -17,7 +17,7 @@ public class HelloApplication extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("roleSelect.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        Image icon = new Image("carIcon2.png");
+        Image icon = new Image("carIcon.png");
         stage.getIcons().add(icon);
         stage.setTitle("Car Service Management");
         scene.getStylesheets().add(getClass().getResource("/loginCSS.css").toExternalForm());
