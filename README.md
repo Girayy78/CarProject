@@ -126,5 +126,9 @@ Password: [customer password]
 
 
 
+Authors:
 
+Oğuz Giray Gök
+Melih Çelik
+Feyza Sapan
 
