@@ -64,31 +64,6 @@ Navigate to com.example.carmanagement.HelloApplication.java
 Right-click and select Run 'HelloApplication.main()'
 
 
-
-Project Structure
-com.example.carmanagement/
-├── AdminDashboardController.java   # Admin dashboard logic
-├── AdminLoginController.java       # Admin authentication
-├── BrakeServicesController.java    # Brake service options
-├── Car.java                        # Car model class
-├── CarRegisterController.java      # Vehicle registration
-├── CreateTable.java                # Database initialization
-├── CustomerDashboardController.java # Customer views
-├── CustomerLoginController.java    # Customer authentication
-├── DataBase.java                   # Database connection handler
-├── EssentialMaintenanceController.java # Basic maintenance services
-├── HelloApplication.java           # Main application entry point
-├── HomepageController.java         # Main navigation controller
-├── LoggedUser.java                 # User session management
-├── OilChangeController.java        # Oil service options
-├── OptionalServicesController.java # Additional services
-├── RegisterController.java         # User registration
-├── RoleSelectController.java       # User role selection
-├── SceneController.java            # Scene transition handler
-├── ServiceSelectionController.java # Service menu controller
-└── Vehicle.java                    # Base vehicle class
-Usage
-
 Start the application
 Select role (Admin or Customer)
 For new customers:
