@@ -10,7 +10,7 @@ public class StateManager {
     private static final Map<String, Boolean> checkboxStates = new HashMap<>();
 
 
-    public static void saveCheckboxState(String controllerName, String checkboxId, boolean isSelected) {
+    public static void saveCheckboxState(String controllerName, String checkboxId, boolean isSelected) {                //Saves checkbox status without database
         String key = controllerName + ":" + checkboxId;
         checkboxStates.put(key, isSelected);
     }

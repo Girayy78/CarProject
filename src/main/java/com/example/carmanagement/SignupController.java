@@ -73,7 +73,7 @@ public class SignupController {
         switchTo("roleSelect.fxml", event, "Select Login", "/loginCSS.css");
     }
 
-    private void showStyledSuccessAlert() {
+    private void showStyledSuccessAlert() {                   //Registration succesfull popup
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Registration Successful");
         alert.setHeaderText(null);

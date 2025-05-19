@@ -17,7 +17,7 @@ public class HomepageController {
     }
 
     public void goToEssentialMaintenance(Event event) throws IOException {
-        SceneController.switchTo("essentialMaintenance.fxml", event, "Essential Maintenance!", "/loginCSS.css");
+        SceneController.switchTo("essentialMaintenance.fxml", event, "Essential Maintenance!", "/loginCSS.css");              //All these methods are assigned to buttons and does what it should when pressed
     }
 
     public void goToOilChange(Event event) throws IOException {

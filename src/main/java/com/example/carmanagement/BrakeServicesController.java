@@ -17,12 +17,12 @@ public class BrakeServicesController {
     @FXML private CheckBox brakePadCheck, brakeDiscCheck, brakeFluidCheck;
     @FXML private Button saveButton;
 
-    private boolean selectionsSaved = false;
+    private boolean selectionsSaved = false;                       // selectionsSaved starts as false and is changed if its selected
 
     @FXML
     public void initialize() {
         try (Connection conn = DataBase.connect()) {
-            loadCheckBox(conn, brakePadCheck, "Brake Pad Replacement");
+            loadCheckBox(conn, brakePadCheck, "Brake Pad Replacement");                       // Loads the checkboxes as soon as brake services fxml is opened
             loadCheckBox(conn, brakeDiscCheck, "Brake Disc Maintenance");
             loadCheckBox(conn, brakeFluidCheck, "Brake Fluid Check");
 
@@ -75,7 +75,7 @@ public class BrakeServicesController {
     }
 
     private void disableAll() {
-        brakePadCheck.setDisable(true);
+        brakePadCheck.setDisable(true);                           //Disabling so it cant be changed
         brakeDiscCheck.setDisable(true);
         brakeFluidCheck.setDisable(true);
         saveButton.setDisable(true);

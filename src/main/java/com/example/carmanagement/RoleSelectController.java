@@ -32,7 +32,7 @@ public class RoleSelectController {
     @FXML
     private void underLineSignUpLabel(Event event) {
         signUpLabel.setUnderline(true);
-    }
+    }              //Makes it easier for customers to understand that Sign Up is clickable
 
     @FXML
     private void removeUnderLineSignUpLabel(Event event) {

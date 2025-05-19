@@ -22,7 +22,7 @@ public class OilChangeController {
     @FXML
     public void initialize() {
         try (Connection conn = DataBase.connect()) {
-            loadCheckBox(conn, engineOilCheck, "Engine Oil Replacement");
+            loadCheckBox(conn, engineOilCheck, "Engine Oil Replacement");                                          // Loads the checkboxes as soon as brake services fxml is opened
             loadCheckBox(conn, oilFilterCheck, "Oil Filter Replacement");
             loadCheckBox(conn, oilQualityCheck, "Check Oil Quality");
 

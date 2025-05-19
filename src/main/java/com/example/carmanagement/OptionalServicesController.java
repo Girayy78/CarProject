@@ -21,7 +21,7 @@ public class OptionalServicesController {
     @FXML
     public void initialize() {
         try (Connection conn = DataBase.connect()) {
-            loadCheckBox(conn, carWashCheck, "Car Wash");
+            loadCheckBox(conn, carWashCheck, "Car Wash");                                                          // Loads the checkboxes as soon as brake services fxml is opened
             loadCheckBox(conn, interiorCleaningCheck, "Interior Cleaning");
             loadCheckBox(conn, polishingCheck, "Polishing");
 

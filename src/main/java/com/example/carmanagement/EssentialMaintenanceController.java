@@ -27,7 +27,7 @@ public class EssentialMaintenanceController {
     @FXML
     public void initialize() {
         try (Connection conn = DataBase.connect()) {
-            loadCheckBoxState(conn, tireCheck, "Tire Maintenance");
+            loadCheckBoxState(conn, tireCheck, "Tire Maintenance");                                                // Loads the checkboxes as soon as brake services fxml is opened
             loadCheckBoxState(conn, fluidsCheck, "Fluids Maintenance");
             loadCheckBoxState(conn, airFilterCheck, "Air Filter Cleaning");
             loadCheckBoxState(conn, beltCheck, "Belt Maintenance");
