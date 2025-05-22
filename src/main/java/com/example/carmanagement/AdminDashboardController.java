@@ -25,7 +25,7 @@ public class AdminDashboardController {
     public void initialize() {
         try (Connection conn = DataBase.connect()) {
             String sql = """
-                SELECT u.name, u.car_brand, u.car_model, u.plate, s.service_name, s.selected_at
+                SELECT u.name, u.car_brand, u.car_model, u.plate, u.vehicle_type, s.service_name, s.selected_at
                 FROM users u
                 JOIN service_selections s ON u.name = s.username
                 WHERE s.selected = 1 AND LOWER(u.role) != 'admin'
@@ -46,6 +46,7 @@ public class AdminDashboardController {
                 String brand = rs.getString("car_brand");
                 String model = rs.getString("car_model");
                 String plate = rs.getString("plate");
+                String vehicleType = rs.getString("vehicle_type");
                 String service = rs.getString("service_name");
                 String time = rs.getString("selected_at");
 

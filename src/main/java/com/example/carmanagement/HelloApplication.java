@@ -36,7 +36,8 @@ public class HelloApplication extends Application {
                     role TEXT NOT NULL,
                     car_brand TEXT,
                     car_model TEXT,
-                    plate TEXT
+                    plate TEXT,
+                    vehicle_type TEXT
                 );
             """;
 
